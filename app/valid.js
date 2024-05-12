@@ -35,7 +35,7 @@ function isNaN(number) {
 }
 
 function numberOutOfRange(number) {
-    return number > maiorValor || number < menorValor
+    return number > biggerValue || number < lesserValue
 }
 
 document.body.addEventListener('click', e => {

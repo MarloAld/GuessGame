@@ -1,14 +1,13 @@
-const menorValor = 10
-const maiorValor = 110
-const secretNumber = numeroAleatorio()
-const elementoMenorValor = document.getElementById('menor-valor')
-const elementoMaiorValor = document.getElementById('maior-valor')
+const lesserValue = 1
+const biggerValue = 100
+const secretNumber = randomNumber()
+const lesserValueElement = document.getElementById('lesser-value')
+const biggerValueElement = document.getElementById('bigger-value')
 
-function numeroAleatorio() {
-    return parseInt(Math.random() * maiorValor + 1)
+function randomNumber() {
+    return parseInt(Math.random() * (biggerValue - lesserValue + 1)) + lesserValue
 }
-
 console.log(secretNumber);
 
-elementoMenorValor.innerHTML = menorValor
-elementoMaiorValor.innerHTML = maiorValor
+lesserValueElement.innerHTML = lesserValue
+biggerValueElement.innerHTML = biggerValue
