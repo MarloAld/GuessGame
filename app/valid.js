@@ -1,3 +1,4 @@
+const mainBody = document.querySelector('main')
 function checkIfGuessIsValid(guess){
     const number = +guess
     
@@ -12,7 +13,7 @@ function checkIfGuessIsValid(guess){
     }
 
     if(number === secretNumber){
-        document.body.innerHTML = `
+        mainBody.innerHTML = `
             <h2>Você acertou!</h2>
             <h3>O número secreto era: ${secretNumber}</h3>
             <button id="play-again" class="play__again-btn">Jogar novamente</button>
