@@ -7,7 +7,12 @@
     integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
     integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="styles.css">
+    
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/mobile.css">
+
     <title>Numero Secreto</title>
 </head>
 <body>
@@ -43,7 +48,10 @@
         <div id="guess" class="message"></div>
         <div class="guess-box">
             <h4>Qual o número secreto?</h4>
-            <input type="text" class="answer-space">
+            <form action="">
+                <input type="text" class="answer-space" id="writen-guess" placeholder="Seu palpite!">
+                <input type="submit" id="send" value="sending">
+            </form>
         </div>
     </main>
     
@@ -57,6 +65,5 @@
 <script src="app/speechRecognition.js"></script>
 <script src="app/valid.js"></script>
 <script src="app/hamburgerMenu.js"></script>
-<script src="app/mute.js"></script>
 </body>
 </html>
